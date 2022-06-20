@@ -13,6 +13,7 @@
 		C2138BFB2860F0EB00BB349B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2138BF92860F0EB00BB349B /* Main.storyboard */; };
 		C2138BFD2860F0ED00BB349B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2138BFC2860F0ED00BB349B /* Assets.xcassets */; };
 		C2138C002860F0ED00BB349B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2138BFE2860F0ED00BB349B /* LaunchScreen.storyboard */; };
+		C2138C092860F13E00BB349B /* URLSessionBackport in Frameworks */ = {isa = PBXBuildFile; productRef = C2138C082860F13E00BB349B /* URLSessionBackport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2138C092860F13E00BB349B /* URLSessionBackport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = URLSessionBackportTest;
+			packageProductDependencies = (
+				C2138C082860F13E00BB349B /* URLSessionBackport */,
+			);
 			productName = URLSessionBackportTest;
 			productReference = C2138BF02860F0EB00BB349B /* URLSessionBackportTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C2138BE72860F0EB00BB349B;
+			packageReferences = (
+				C2138C072860F13E00BB349B /* XCRemoteSwiftPackageReference "URLSessionBackport" */,
+			);
 			productRefGroup = C2138BF12860F0EB00BB349B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +302,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +330,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2138C072860F13E00BB349B /* XCRemoteSwiftPackageReference "URLSessionBackport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mochidev/URLSessionBackport.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2138C082860F13E00BB349B /* URLSessionBackport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2138C072860F13E00BB349B /* XCRemoteSwiftPackageReference "URLSessionBackport" */;
+			productName = URLSessionBackport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2138BE82860F0EB00BB349B /* Project object */;
 }

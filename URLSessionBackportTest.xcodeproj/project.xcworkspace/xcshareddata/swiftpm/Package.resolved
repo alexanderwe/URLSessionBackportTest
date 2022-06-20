@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "urlsessionbackport",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mochidev/URLSessionBackport.git",
+      "state" : {
+        "revision" : "133026d8723a81d7ddd293ce3d9fcadf72317517",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
